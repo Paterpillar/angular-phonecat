@@ -61,6 +61,11 @@ it('should be possible to control phone order via the drop down select box', fun
  ]);
  });
 
+   it('should have four thumbnail images', function() {
+      expect(repeater('.phone-thumbs li').count()).toBe(4);
+    });
+
+
 it('should render phone specific links', function() {
 var query = element(by.model('query'));
 query.sendKeys('nexus');
